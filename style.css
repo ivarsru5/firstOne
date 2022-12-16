@@ -46,6 +46,7 @@ input{
     outline: none;
     border: none;
     border-bottom: 2px solid black;
+    font-size: 16px;
 }
 
 #submit{
@@ -57,4 +58,5 @@ input{
     float: right;
     font-size: 16px;
     font-weight: bold;
+    border-radius: 10px;
 }

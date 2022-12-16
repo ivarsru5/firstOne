@@ -14,3 +14,25 @@ function getCurrentDay(){
 }
 
 document.getElementById("date").setAttribute("min", getCurrentDay());
+
+const form = document.querySelector("form");
+const button = document.getElementById("submit");
+
+button.addEventListener("click", (e) =>{
+    e.preventDefault()
+
+    let xml = new XMLHttpRequest();
+    xml.open("POST", "backEndScript.php", true);
+    xml.onload = () =>{
+        if(xml.readyState == 4 && xml.status == 200){
+            let response = xml.response;
+            if(response != "Appointmant made."){
+                alert(response);
+            }else{
+                form.reset()
+            }
+        }
+    }
+    let formData = new FormData(form);
+    xml.send(formData);
+});

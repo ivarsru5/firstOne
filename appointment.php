@@ -14,15 +14,15 @@
             <h1 class="app">Make an appointment</h1>
 
             <label for="name">Full name:</label>
-            <input type="text" id="fullName" placeholder="Write your full name here.">
+            <input type="text" id="fullName" name="name" placeholder="Write your full name here.">
 
             <label for="email">Email:</label>
-            <input type="text" id="email" placeholder="Email address.">
+            <input type="text" id="email" name="email" placeholder="Email address.">
 
             <label for="date">Choose your date:</label>
-            <input type="date" id="date">
+            <input type="date" id="date" name="date">
 
-            <button id="submit">Submit</button>
+            <button type="button" id="submit">Submit</button>
         </form>
     </div>
 
