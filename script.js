@@ -1,6 +1,6 @@
 function getCurrentDay(){
     let date = new Date();
-    let dd = date.getDate();
+    let dd = date.getDate() + 1;
     let mm = date.getMonth() + 1;
     let yy = date.getFullYear();
     if(dd < 10){
@@ -29,6 +29,7 @@ button.addEventListener("click", (e) =>{
             if(response != "Appointmant made."){
                 alert(response);
             }else{
+                alert(response);
                 form.reset()
             }
         }
